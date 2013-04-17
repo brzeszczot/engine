@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1366227099 source:/root/projects/gamestructure/engine.cpp
+	"engine.hpp"
+
+1366227946 /root/projects/gamestructure/engine.hpp
+	<vector>
+	"object.hpp"
+	"object2.hpp"
+	"object3.hpp"
+
+1366030516 source:/root/projects/gamestructure/main.cpp
+	<iostream>
+	"engine.hpp"
+
+1366227900 /root/projects/gamestructure/view.hpp
+	<iostream>
+
+1366227961 source:/root/projects/gamestructure/view.cpp
+	"view.hpp"
+
+1366227548 /root/projects/gamestructure/object.hpp
+	<iostream>
+	"view.hpp"
+
+1366227557 source:/root/projects/gamestructure/object.cpp
+	"object.hpp"
+
+1366225131 /root/projects/gamestructure/object2.hpp
+	<iostream>
+	"object.hpp"
+
+1366227455 source:/root/projects/gamestructure/object2.cpp
+	"object2.hpp"
+
+1366224251 /root/projects/gamestructure/object3.hpp
+	<iostream>
+	"object2.hpp"
+
+1366227438 source:/root/projects/gamestructure/object3.cpp
+	"object3.hpp"
+
