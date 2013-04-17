@@ -6,7 +6,7 @@
 #include "object2.hpp"
 #include "object3.hpp"
 //#include "view.hpp"
-class view;
+//class view;
 class engine
 {
     public:

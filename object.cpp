@@ -1,4 +1,5 @@
 #include "object.hpp"
+#include "engine.hpp"
 
 object::object()
 {
@@ -16,6 +17,6 @@ void object::update()
 
 void object::draw()
 {
-    std::cout << "object1: " << int_object << std::endl;
+    std::cout << "object1: " << en->ii << std::endl;
 }
 
