@@ -13,7 +13,6 @@ class view
         virtual void draw()=0;
         virtual void update()=0;
         engine* en;
-        int int_object;
 };
 
 #endif // VIEW_HPP_INCLUDED
