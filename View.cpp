@@ -1,17 +1,17 @@
-#include "view.hpp"
-#include "engine.hpp"
+#include "View.hpp"
+#include "Engine.hpp"
 
-view::view()
+View::View()
 {
     en = NULL;
 }
 
-view::~view()
+View::~View()
 {
 
 }
 
-void view::set_engine(engine* v_en)
+void View::set_engine(Engine* v_en)
 {
     en = v_en;
 }

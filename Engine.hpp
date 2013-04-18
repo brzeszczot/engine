@@ -2,21 +2,20 @@
 #define ENGINE_HPP_INCLUDED
 
 #include <vector>
-#include "object.hpp"
-#include "object2.hpp"
-#include "object3.hpp"
+#include "Object.hpp"
+#include "Object2.hpp"
+#include "Object3.hpp"
 //#include "view.hpp"
 //class view;
-class engine
+class Engine
 {
     public:
-        engine();
-        virtual ~engine();
-        void Run();
-        void UpdateAll();
-        void AddObj();
-        std::vector<view*> views;
-        int ii;
+        Engine();
+        virtual ~Engine();
+        void run();
+        void updateAll();
+        void addObj();
+        std::vector<View*> views;
 };
 
 #endif // ENGINE_HPP_INCLUDED

@@ -1,43 +1,41 @@
-#include "engine.hpp"
+#include "Engine.hpp"
 
-engine::engine()
+Engine::Engine()
 {
-    ii = 34;
-
-    Run();
-    AddObj();
-    UpdateAll();
+    run();
+    addObj();
+    updateAll();
 }
 
-engine::~engine()
+Engine::~Engine()
 {
 
 }
 
-void engine::Run()
+void Engine::run()
 {
 
 }
 
-void engine::AddObj()
+void Engine::addObj()
 {
     for(size_t ii=0; ii<15; ii++)
     {
-        view* v;
+        View* v;
 
         if(ii<5)
-            v = new object();
+            v = new Object();
         else if(ii<10)
-            v = new object2();
+            v = new Object2();
         else
-            v = new object3();
+            v = new Object3();
 
         v->set_engine(this);
         views.push_back(v);
     }
 }
 
-void engine::UpdateAll()
+void Engine::updateAll()
 {
     for(size_t ii=0; ii<views.size(); ii++)
     {

@@ -2,13 +2,13 @@
 #define OBJECT_HPP_INCLUDED
 
 #include <iostream>
-#include "view.hpp"
+#include "View.hpp"
 
-class object: public view
+class Object: public View
 {
     public:
-        object();
-        virtual ~object();
+        Object();
+        virtual ~Object();
         virtual void draw();
         virtual void update();
 };

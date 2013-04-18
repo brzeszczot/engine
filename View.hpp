@@ -3,16 +3,16 @@
 
 #include <iostream>
 
-class engine;
-class view
+class Engine;
+class View
 {
     public:
-        view();
-        virtual ~view();
-        void set_engine(engine* v_en);
+        View();
+        virtual ~View();
+        void set_engine(Engine* v_en);
         virtual void draw()=0;
         virtual void update()=0;
-        engine* en;
+        Engine* en;
 };
 
 #endif // VIEW_HPP_INCLUDED

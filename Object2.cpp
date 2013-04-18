@@ -1,23 +1,23 @@
-#include "object2.hpp"
-#include "engine.hpp"
+#include "Object2.hpp"
+#include "Engine.hpp"
 
-object2::object2()
+Object2::Object2()
 {
 }
 
-object2::~object2()
+Object2::~Object2()
 {
 
 }
 
-void object2::update()
+void Object2::update()
 {
-    object::update();
-    object2::draw();
+    Object::update();
+    Object2::draw();
 }
 
-void object2::draw()
+void Object2::draw()
 {
-    std::cout << "object2: " << en->ii << std::endl;
+    std::cout << "object2: " << std::endl;
 }
 

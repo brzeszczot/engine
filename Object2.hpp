@@ -2,13 +2,13 @@
 #define OBJECT2_HPP_INCLUDED
 
 #include <iostream>
-#include "object.hpp"
+#include "Object.hpp"
 
-class object2: public object
+class Object2: public Object
 {
     public:
-        object2();
-        virtual ~object2();
+        Object2();
+        virtual ~Object2();
         virtual void draw();
         virtual void update();
 };
