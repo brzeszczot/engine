@@ -1,20 +1,30 @@
 #include "Engine.hpp"
 
-Engine::Engine()
+using namespace std;
+
+Engine::Engine(Library* v_lib): lib(v_lib)
 {
-    run();
+    views = new vector<View*>;
+    isRunning = true;
+
     addObj();
-    updateAll();
+    run();
 }
 
 Engine::~Engine()
 {
-
+    for(size_t ii=0; ii<views->size(); ii++)
+        delete (*views)[ii];
+    views->clear();
+    delete views;
 }
 
 void Engine::run()
 {
-
+    while(isRunning)
+    {
+        updateAll();
+    }
 }
 
 void Engine::addObj()
@@ -31,15 +41,15 @@ void Engine::addObj()
             v = new Object3();
 
         v->set_engine(this);
-        views.push_back(v);
+        views->push_back(v);
     }
 }
 
 void Engine::updateAll()
 {
-    for(size_t ii=0; ii<views.size(); ii++)
+    for(size_t ii=0; ii<views->size(); ii++)
     {
-        std::cout << ii << std::endl;
-        views[ii]->update();
+        cout << ii << endl;
+        (*views)[ii]->update();
     }
 }
